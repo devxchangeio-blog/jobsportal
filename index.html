@@ -139,44 +139,49 @@
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <label class="font-weight-bold" for="message">Previous Company Name</label>
-                                <textarea name="message" id="company" cols="30" rows="5" class="form-control"
-                                          ></textarea>
+                                <input name="message" id="company" cols="30" rows="5" class="form-control"
+                                          ></input>
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <label class="font-weight-bold" for="message">What Roles are you looking for ?</label>
-                                <textarea name="message" id="role" cols="30" rows="5" class="form-control"></textarea>
+                                <input name="message" id="role" cols="30" rows="5" class="form-control"></input>
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <label class="font-weight-bold" for="message">What is your current location ?</label>
-                                <textarea name="message" id="clocation" cols="30" rows="5" class="form-control"></textarea>
+                                <input name="message" id="clocation" cols="30" rows="5" class="form-control"></input>
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <label class="font-weight-bold" for="message">Are you Open for Relocation ?</label>
-                                <textarea name="message" id="relocation" cols="30" rows="5" class="form-control"></textarea>
+                                <input type="checkbox" id="relocation" cols="30" rows="5" class="form-control">
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="message">What type of Job you prefer ?</label>
-                                <textarea name="message" id="jobType" cols="30" rows="5" class="form-control"></textarea>
+                                <label class="font-weight-bold" for="message">What type of Job you prefer ?</label><br>
+                                <select id="jobType">
+                                    <option value="volvo">Full Time</option>
+                                    <option value="saab">Part Time</option>
+                                    <option value="opel">Contract</option>
+                                    <option value="opel">Contract through my Employer</option>
+                                </select>
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <label class="font-weight-bold" for="message">Do you have an Employer (or a Visa
-                                    Sponsor) ?</label>
-                                <textarea name="message" id="empType" cols="30" rows="5" class="form-control"></textarea>
+                                    Sponsor) ?</label><br>
+                                <input type="checkbox" id="empType"/>
                             </div>
                         </div>
 
@@ -191,15 +196,21 @@
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <label class="font-weight-bold" for="message">Do you need Visa Sponsorship ?</label>
-                                <textarea name="message" id="visa" cols="30" rows="5" class="form-control"></textarea>
+                                <input type="checkbox" id="visaSponsor" cols="30" rows="5" class="form-control">
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <label class="font-weight-bold" for="message">If Yes, What is your current Immigration
-                                    Status ?</label>
-                                <textarea name="message" id="immigrationStatus" cols="30" rows="5" class="form-control"></textarea>
+                                    Status ?</label><br>
+                                <select id="visaType">
+                                    <option value="volvo">H1B</option>
+                                    <option value="saab">H4- EAD</option>
+                                    <option value="opel">L2 - EAD</option>
+                                    <option value="opel">L1 - EAD</option>
+                                    <option value="audi">OPT - EAD or STEM OPT</option>
+                                </select>
                             </div>
                         </div>
 
