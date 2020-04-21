@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Jobs COVID-19</title>
+    <title>DevXchange - Job Portal</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -46,14 +46,16 @@
             <div class="row align-items-center">
 
                 <div class="col-6 col-xl-2">
-                    <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">Jobs</a></h1>
+                    <h1 class="mb-0"><a href="candidate.html" class="text-black h2 mb-0">JobPortal</a></h1>
                 </div>
 
                 <div class="col-10 col-xl-10 d-none d-xl-block">
                     <nav class="site-navigation text-right" role="navigation">
 
                         <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-                            <li><a href="index.html">Candidate</a></li>
+                            <li><a href="candidate.html">Candidate</a></li>
+                            <li><a href="recruiter.html">Recruiter</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -69,7 +71,7 @@
 
     <div class="unit-5 overlay" style="background-image: url('images/hero_bg_2.jpg');">
         <div class="container text-center">
-            <h2 class="mb-0">Jobs COVID-19</h2>
+            <h2 class="mb-0">Candidate</h2>
         </div>
     </div>
 
@@ -118,56 +120,54 @@
                         </div>
                         <div class="row form-group">
                             <div class="col-md-12 mb-3 mb-md-0">
-                                <label class="font-weight-bold" for="fullname">LinkedIn URL</label>
-                                <input type="text" id="linkedin" class="form-control" >
+                                <label class="font-weight-bold" for="linkedin">LinkedIn URL</label>
+                                </label><input type="text" id="linkedin" class="form-control" >
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="email">Total Years of Experience</label>
+                                <label class="font-weight-bold" for="exp">Total Years of Experience</label>
                                 <input type="email" id="exp" class="form-control" >
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="email">Previous Company Name</label>
+                                <label class="font-weight-bold" for="subject">Previous Company Name</label>
                                 <input type="text" id="subject" class="form-control">
                             </div>
                         </div>
 
-
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="message">Previous Company Name</label>
-                                <input name="message" id="company" cols="30" rows="5" class="form-control"
-                                          ></input>
+                                <label class="font-weight-bold" for="company">Previous Company Name</label>
+                                <input id="company" cols="30"  class="form-control"/>
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="message">What Roles are you looking for ?</label>
-                                <input name="message" id="role" cols="30" rows="5" class="form-control"></input>
+                                <label class="font-weight-bold" for="role">What Roles are you looking for ?</label>
+                                <input id="role" cols="30" class="form-control"/>
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="message">What is your current location ?</label>
-                                <input name="message" id="clocation" cols="30" rows="5" class="form-control"></input>
+                                <label class="font-weight-bold" for="clocation">What is your current location ?</label>
+                                <input id="clocation" cols="30" class="form-control"/>
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="message">Are you Open for Relocation ?</label>
-                                <input type="checkbox" id="relocation" cols="30" rows="5" class="form-control">
+                                <label class="font-weight-bold" for="relocation">Are you Open for Relocation ?</label>
+                                <input type="checkbox" id="relocation" cols="30" class="form-control">
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="message">What type of Job you prefer ?</label><br>
+                                <label class="font-weight-bold" for="jobType">What type of Job you prefer ?</label><br>
                                 <select id="jobType">
                                     <option value="volvo">Full Time</option>
                                     <option value="saab">Part Time</option>
@@ -179,7 +179,7 @@
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="message">Do you have an Employer (or a Visa
+                                <label class="font-weight-bold" for="empType">Do you have an Employer (or a Visa
                                     Sponsor) ?</label><br>
                                 <input type="checkbox" id="empType"/>
                             </div>
@@ -187,7 +187,7 @@
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="message">If Yes, Please let us know how we can
+                                <label class="font-weight-bold" for="empContactType">If Yes, Please let us know how we can
                                     contact your employer</label>
                                 <textarea name="message" id="empContactType" cols="30" rows="5" class="form-control"></textarea>
                             </div>
@@ -195,14 +195,14 @@
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="message">Do you need Visa Sponsorship ?</label>
-                                <input type="checkbox" id="visaSponsor" cols="30" rows="5" class="form-control">
+                                <label class="font-weight-bold" for="visaSponsor">Do you need Visa Sponsorship ?</label>
+                                <input type="checkbox" id="visaSponsor" cols="30" class="form-control">
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="message">If Yes, What is your current Immigration
+                                <label class="font-weight-bold" for="visaType">If Yes, What is your current Immigration
                                     Status ?</label><br>
                                 <select id="visaType">
                                     <option value="volvo">H1B</option>
@@ -216,15 +216,15 @@
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="message">Brief About Yourself.</label>
-                                <textarea name="message" id="about" cols="30" rows="5" class="form-control"></textarea>
+                                <label class="font-weight-bold" for="about">Brief About Yourself.</label>
+                                <textarea id="about" cols="30" rows="5" class="form-control"></textarea>
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="message">Do you have your resume ?</label>
-                                <textarea name="message" id="resume" cols="30" rows="5" class="form-control"></textarea>
+                                <label class="font-weight-bold" for="resume">Do you have your resume ?</label>
+                                <textarea id="resume" cols="30" rows="5" class="form-control"></textarea>
                             </div>
                         </div>
 
@@ -240,7 +240,7 @@
                     <div class="p-4 mb-3 bg-white">
                         <h3 class="h5 text-black mb-3">Available Jobs</h3>
                         <p></p>
-                        <p><a href="#" class="btn btn-primary  py-2 px-4 rounded-0">Learn More</a></p>
+                        <p><a href="jobs.html" class="btn btn-primary  py-2 px-4 rounded-0">Learn More</a></p>
                     </div>
                 </div>
             </div>
